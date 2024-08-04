@@ -9,6 +9,10 @@ let mainHead = $("#main");
 let allHeads = document.querySelectorAll("header");
 let current = 1;
 
+hed2.hide();
+hed3.hide();
+hed4.hide();
+
 // Control The Sections
 let sectionOne = $(".section-1");
 let sectionTwo = $(".section-2");
@@ -115,6 +119,7 @@ let yel1 = $(".header-1 ul.navigator:first-of-type  li:nth-child(3)");
 let ante1 = $(".header-1 ul.navigator:first-of-type  li:last-child");
 
 jos1.on("click", function (event) {
+    hed2.show()
     hed1.addClass("transition");
     hed2.addClass("transition");
     hed1.addClass("away-l");
@@ -661,11 +666,11 @@ mountainResizer3.observe($(`section.section-3 .parent .cards-one div.box-blue`)[
 
 
 function mountainWidth4() {
-    let vwWidth = window.innerWidth;
+    let mediaQuery = window.matchMedia('(max-width: 882px');
     let blueWidth = $(`section.section-4 .parent .cards-one div.box-blue`)[0].offsetWidth;
     let mountain = $(`section.section-4 .parent .cards-two div.mountain`);
     let smCards = $(`section.section-4 .parent .sm-cards`);
-    if (vwWidth < 881) {
+    if (mediaQuery.matches) {
         mountain.css("width",`${blueWidth}px`);
         smCards.css("width",`${blueWidth}px`);
     }

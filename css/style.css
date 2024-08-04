@@ -190,7 +190,7 @@ body {
 /* Start The Header Section */
 header {
     background-image: url("../imgs/mas/zahraa/zahraa1.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: 500px;
     padding-top: 30px;
 }
