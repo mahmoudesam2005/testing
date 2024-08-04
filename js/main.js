@@ -592,12 +592,12 @@ ani.observe(con[0], {
 
 
 function mountainWidth1() {
-    let vwWidth = window.innerWidth;
     let blueWidth = $(`section.section-1 .parent .cards-one div.box-blue`)[0].offsetWidth;
     let mountain = $(`section.section-1 .parent .cards-two div.mountain`);
     let smCards = $(`section.section-1 .parent .sm-cards`);
-    console.log(vwWidth);
-    if (vwWidth < 883) {
+    let mediaQuery = window.matchMedia('(max-width: 882px');
+    console.log(mediaQuery);
+    if (mediaQuery.matches) {
         mountain.css("width",`${blueWidth}px`);
         smCards.css("width",`${blueWidth}px`);
     }
@@ -614,24 +614,14 @@ const mountainResizer1 = new ResizeObserver(mountainWidth1);
 mountainResizer1.observe($(`section.section-1 .parent .cards-one div.box-blue`)[0]);
 
 
-function displayViewportWidth() {
-    let vwWidth = window.innerWidth;
-    console.log(`Viewport width: ${vwWidth}px`);
-}
-
-// Call the function to log the viewport width
-displayViewportWidth();
-
-// Optional: Update on resize
-window.addEventListener('resize', displayViewportWidth);
 
 
 function mountainWidth2() {
-    let vwWidth = window.innerWidth;
+    let mediaQuery = window.matchMedia('(max-width: 882px');
     let blueWidth = $(`section.section-2 .parent .cards-one div.box-blue`)[0].offsetWidth;
     let mountain = $(`section.section-2 .parent .cards-two div.mountain`);
     let smCards = $(`section.section-2 .parent .sm-cards`);
-    if (vwWidth < 881) {
+    if (mediaQuery.matches) {
         mountain.css("width",`${blueWidth}px`);
         smCards.css("width",`${blueWidth}px`);
     }
@@ -649,11 +639,11 @@ mountainResizer2.observe($(`section.section-2 .parent .cards-one div.box-blue`)[
 
 
 function mountainWidth3() {
-    let vwWidth = window.innerWidth;
+    let mediaQuery = window.matchMedia('(max-width: 882px');
     let blueWidth = $(`section.section-3 .parent .cards-one div.box-blue`)[0].offsetWidth;
     let mountain = $(`section.section-3 .parent .cards-two div.mountain`);
     let smCards = $(`section.section-3 .parent .sm-cards`);
-    if (vwWidth < 881) {
+    if (mediaQuery.matchesL) {
         mountain.css("width",`${blueWidth}px`);
         smCards.css("width",`${blueWidth}px`);
     }
