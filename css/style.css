@@ -189,7 +189,7 @@ body {
 /* End The Begninning Animation */
 /* Start The Header Section */
 header {
-    background-image: url("../imgs/mas/iz.jpg");
+    background-image: url("../imgs/mas/zahraa/zahraa1.jpg");
     background-size: 100% 100%;
     min-height: 500px;
     padding-top: 30px;
@@ -218,6 +218,21 @@ header .container {
 
 .l-0 {
     margin-left: 0 !important;
+}
+
+.page-title {
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .mas-title {
+        display: flex;
+        justify-content: center;
+        font-size: 18px !important;
+    }
+    .page-title {
+        justify-content: center;
+    }
 }
 
 header .container .row .circle {
@@ -296,10 +311,11 @@ header .container .row .ex-ul .text-shadow-light.active {
     -webkit-border-radius: var(--main-radius);
     -moz-border-radius: var(--main-radius);
     -ms-border-radius: var(--main-radius);
-    -o-border-radius: var(--main-radius);
-    top: 26px;
-    right: 57px;
+    -o-border-radius: var(--main-radius);    
+    top: 20px;
+    right: 68px;
 }
+
 
 @media (min-width: 768px) {
     .california::after {
@@ -313,18 +329,25 @@ header .container .row .ex-ul .text-shadow-light.active {
         -moz-border-radius: var(--main-radius);
         -ms-border-radius: var(--main-radius);
         -o-border-radius: var(--main-radius);
-        top: 33px;
-        right: 60px;
+        top: 23px;
+        right: 51px;
     }
 }
 
 header .container .title {
-    font-size: 10.5vw;
+    font-size: 5vw;
     letter-spacing: 12px;
     font-weight: 900;
-    margin-top: 45px;
+    margin-top: 100px;
     width: fit-content;
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    header .container .title {
+        font-size: 5vw;
+        letter-spacing: 2px;
+    }
 }
 
 .header-2 .container .title {
@@ -373,6 +396,14 @@ header .container .n-container {
 header .container .n-container .national {
     font-size: 14px;
     letter-spacing: 3px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    header .container .n-container .national {
+        justify-content: center;
+        margin: 10px auto;
+    }
 }
 
 @media (min-width: 991px) {
@@ -447,6 +478,12 @@ header .container .row:first-child .f-sm {
 
 header .container .icons {
     margin-top: 7%;
+}
+
+@media (max-width: 768px) {
+    header .container .icons {
+        margin-top: 20%;
+    }
 }
 
 .header-2 .container .icons {
